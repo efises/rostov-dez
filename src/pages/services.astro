@@ -14,7 +14,7 @@ const metadata = {
 
   <Hero
     title="Услуги по защите бизнеса"
-    subtitle="Комплексная защита от вредителей, документация для СЭС и юридическая поддержка. Работаем под ключ."
+    subtitle="Комплексная защита от вредителей и документация для СЭС. Работаем под ключ."
     actions={[{ variant: 'primary', text: 'Решить проблему конфиденциально', href: '/contact' }]}
   />
 
@@ -23,8 +23,11 @@ const metadata = {
   <Content
     id="bugs"
     isReversed
-    tagline="Защита от насекомых"
     title="Дезинсекция: Тараканы, клопы, муравьи"
+    image={{
+      src: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400',
+      alt: 'Дезинсекция',
+    }}
     items={[
       {
         title: 'Проблема',
@@ -72,7 +75,14 @@ const metadata = {
 
   <!-- Блок 2: ДЕРАТИЗАЦИЯ (Якорь #rats) -->
 
-  <Content id="rats" tagline="Защита от грызунов" title="Дератизация: Крысы и мыши">
+  <Content
+    id="rats"
+    title="Дератизация: Крысы и мыши"
+    image={{
+      src: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400',
+      alt: 'Дератизация',
+    }}
+  >
     <Fragment slot="content">
       <h2 class="text-3xl font-bold tracking-tight dark:text-white sm:text-4xl mb-4">
         Защита от грызунов:<br />Крысы и мыши
@@ -102,7 +112,15 @@ const metadata = {
 
   <!-- Блок 3: ДОКУМЕНТАЦИЯ И ПРОФИЛАКТИКА (Якорь #docs) -->
 
-  <Content id="docs" isReversed tagline="Юридическая защита" title="Аудит СЭС и Документация">
+  <Content
+    id="docs"
+    isReversed
+    title="Аудит СЭС и Документация"
+    image={{
+      src: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400',
+      alt: 'Документация СЭС',
+    }}
+  >
     <Fragment slot="content">
       <h2 class="text-3xl font-bold tracking-tight dark:text-white sm:text-4xl mb-4">Аудит СЭС и Юридическая защита</h2>
       <p class="mb-4">
@@ -129,7 +147,14 @@ const metadata = {
 
   <!-- Блок 4: ДЕЗИНФЕКЦИЯ (Якорь #disinfection) -->
 
-  <Content id="disinfection" tagline="Обработка помещений" title="Дезинфекция: Вирусы, плесень, запахи">
+  <Content
+    id="disinfection"
+    title="Дезинфекция: Вирусы, плесень, запахи"
+    image={{
+      src: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400',
+      alt: 'Дезинфекция',
+    }}
+  >
     <Fragment slot="content">
       <h2 class="text-3xl font-bold tracking-tight dark:text-white sm:text-4xl mb-4">
         Дезинфекция:<br />Вирусы, плесень, запахи
