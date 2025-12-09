@@ -51,7 +51,7 @@ export const footerData = {
     {
       title: 'Контакты',
       links: [
-        { text: 'Телефон: +7 (863) 123-45-67', href: 'tel:+78631234567' },
+        { text: '<span style="white-space: nowrap;">Телефон: +7 (863) 123-45-67</span>', href: 'tel:+78631234567' },
         { text: 'Email: info@rostov-dez.ru', href: 'mailto:info@rostov-dez.ru' },
         { text: 'Ростов-на-Дону', href: '/contact#map' },
       ],
