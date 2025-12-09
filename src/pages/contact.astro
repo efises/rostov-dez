@@ -12,7 +12,7 @@ const metadata = {
 <Layout metadata={metadata}>
   <!-- HeroText Widget ******************* -->
 
-  <HeroText tagline="Контакты">
+  <HeroText>
     <Fragment slot="title">
       Вредители множатся <span class="text-primary">каждый час</span>. То, что сегодня кажется мелочью, завтра может
       <span class="text-primary">вырасти в катастрофу</span>.
@@ -22,7 +22,7 @@ const metadata = {
   <ContactUs
     id="form"
     title="Оставьте заявку"
-    subtitle="Свяжитесь с нами сейчас. Это конфиденциально. Ваши конкуренты и клиенты ничего не узнают. Мы проведем аудит, найдем причину и назовем точную цену решения «под ключ»."
+    subtitle="Свяжитесь с нами сейчас. Это конфиденциально. Мы проведем аудит, найдем причину и назовем точную цену решения «под ключ»."
     inputs={[
       {
         type: 'text',
@@ -59,14 +59,13 @@ const metadata = {
       label: 'Я соглашаюсь на обработку персональных данных в соответствии с политикой конфиденциальности',
     }}
     button="Получить план уничтожения вредителей"
-    description="Заметили вредителя сегодня? Звоните прямо сейчас. Бригада дежурного выезда готова стартовать через 15 минут."
+    description="Заметили вредителя сегодня? Звоните прямо сейчас."
   />
 
   <!-- Features2 Widget (Contact Info) ************** -->
 
   <Features2
     title="Наши контакты"
-    tagline="Как с нами связаться"
     columns={3}
     items={[
       {
@@ -102,23 +101,26 @@ const metadata = {
     ]}
   />
 
-  <!-- Map Section ******************* -->
+  <!-- Tinkoff Model Section ******************* -->
 
-  <section class="px-4 py-16 sm:px-6 mx-auto lg:px-8 lg:py-20 max-w-7xl">
-    <div class="mb-10 md:mb-12 text-center">
-      <h2 class="text-3xl md:text-4xl font-bold leading-tighter tracking-tighter mb-4 font-heading">Мы на карте</h2>
-      <p class="text-xl text-muted dark:text-slate-400">Наш офис находится в центре Ростова-на-Дону</p>
+  <section class="px-4 py-16 sm:px-6 mx-auto lg:px-8 lg:py-20 max-w-4xl">
+    <div class="text-center mb-8">
+      <h2 class="text-3xl md:text-4xl font-bold leading-tighter tracking-tighter mb-6 font-heading">
+        Мы внедрили модель Банка Тинькофф в санитарную защиту.
+      </h2>
     </div>
-    <div class="w-full h-96 rounded-lg overflow-hidden shadow-lg">
-      <!-- Yandex Maps Embedded Map for Rostov-on-Don -->
-      <iframe
-        src="https://yandex.ru/map-widget/v1/?ll=39.701505%2C47.222078&z=12&l=map"
-        width="100%"
-        height="100%"
-        frameborder="0"
-        allowfullscreen
-        style="position:relative;"
-        title="Карта Ростова-на-Дону"></iframe>
+    <div class="prose prose-lg dark:prose-invert mx-auto text-left space-y-4">
+      <p class="text-xl text-muted dark:text-slate-400">
+        Когда-то они доказали, что банку не нужны отделения, чтобы быть лучшим. Мы делаем то же самое в нашей отрасли.
+      </p>
+      <p class="text-xl text-muted dark:text-slate-400">Мы отказались от бессмысленных офисов и секретарей.</p>
+      <p class="text-xl text-muted dark:text-slate-400">
+        Мы вдохновились лидерами финтеха и построили компанию нового типа: без привязки к стенам, но с жесткой привязкой
+        к результату.
+      </p>
+      <p class="text-xl text-muted dark:text-slate-400">
+        Вся коммуникация - в вашем смартфоне. Быстро и по делу. Напишите нам в Telegram — ответим быстро.
+      </p>
     </div>
   </section>
 </Layout>
