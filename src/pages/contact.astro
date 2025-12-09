@@ -12,7 +12,12 @@ const metadata = {
 <Layout metadata={metadata}>
   <!-- HeroText Widget ******************* -->
 
-  <HeroText tagline="Контакты" title="Вредители размножаются каждый час. Не дайте проблеме вырасти в катастрофу." />
+  <HeroText tagline="Контакты">
+    <Fragment slot="title">
+      Вредители множатся <span class="text-primary">каждый час</span>. То, что сегодня кажется мелочью, завтра может
+      <span class="text-primary">вырасти в катастрофу</span>.
+    </Fragment>
+  </HeroText>
 
   <ContactUs
     id="form"
