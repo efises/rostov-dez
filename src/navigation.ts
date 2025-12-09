@@ -41,11 +41,11 @@ export const footerData = {
     {
       title: 'Услуги',
       links: [
-        { text: 'Дезинсекция', href: '/services#disinsection' },
-        { text: 'Дератизация', href: '/services#deratization' },
+        { text: 'Дезинсекция', href: '/services#bugs' },
+        { text: 'Дератизация', href: '/services#rats' },
         { text: 'Дезинфекция', href: '/services#disinfection' },
-        { text: 'Консультация', href: '/services#consultation' },
-        { text: 'Профилактика', href: '/services#prevention' },
+        { text: 'Документы для СЭС', href: '/services#docs' },
+        { text: 'Профилактика', href: '/services#docs' },
       ],
     },
     {
