@@ -3,180 +3,69 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 export const headerData = {
   links: [
     {
-      text: 'Homes',
-      links: [
-        {
-          text: 'SaaS',
-          href: getPermalink('/homes/saas'),
-        },
-        {
-          text: 'Startup',
-          href: getPermalink('/homes/startup'),
-        },
-        {
-          text: 'Mobile App',
-          href: getPermalink('/homes/mobile-app'),
-        },
-        {
-          text: 'Personal',
-          href: getPermalink('/homes/personal'),
-        },
-      ],
+      text: 'Главная',
+      href: getPermalink('/'),
     },
     {
-      text: 'Pages',
-      links: [
-        {
-          text: 'Features (Anchor Link)',
-          href: getPermalink('/#features'),
-        },
-        {
-          text: 'Services',
-          href: getPermalink('/services'),
-        },
-        {
-          text: 'Pricing',
-          href: getPermalink('/pricing'),
-        },
-        {
-          text: 'About us',
-          href: getPermalink('/about'),
-        },
-        {
-          text: 'Contact',
-          href: getPermalink('/contact'),
-        },
-        {
-          text: 'Terms',
-          href: getPermalink('/terms'),
-        },
-        {
-          text: 'Privacy policy',
-          href: getPermalink('/privacy'),
-        },
-      ],
+      text: 'Услуги',
+      href: getPermalink('/services'),
     },
     {
-      text: 'Landing',
-      links: [
-        {
-          text: 'Lead Generation',
-          href: getPermalink('/landing/lead-generation'),
-        },
-        {
-          text: 'Long-form Sales',
-          href: getPermalink('/landing/sales'),
-        },
-        {
-          text: 'Click-Through',
-          href: getPermalink('/landing/click-through'),
-        },
-        {
-          text: 'Product Details (or Services)',
-          href: getPermalink('/landing/product'),
-        },
-        {
-          text: 'Coming Soon or Pre-Launch',
-          href: getPermalink('/landing/pre-launch'),
-        },
-        {
-          text: 'Subscription',
-          href: getPermalink('/landing/subscription'),
-        },
-      ],
+      text: 'О нас',
+      href: getPermalink('/about'),
     },
     {
-      text: 'Blog',
-      links: [
-        {
-          text: 'Blog List',
-          href: getBlogPermalink(),
-        },
-        {
-          text: 'Article',
-          href: getPermalink('get-started-website-with-astro-tailwind-css', 'post'),
-        },
-        {
-          text: 'Article (with MDX)',
-          href: getPermalink('markdown-elements-demo-post', 'post'),
-        },
-        {
-          text: 'Category Page',
-          href: getPermalink('tutorials', 'category'),
-        },
-        {
-          text: 'Tag Page',
-          href: getPermalink('astro', 'tag'),
-        },
-      ],
+      text: 'Контакты',
+      href: getPermalink('/contact'),
     },
     {
-      text: 'Widgets',
-      href: '#',
+      text: 'FAQ',
+      href: getPermalink('/faq'),
     },
   ],
-  actions: [{ text: 'Download', href: 'https://github.com/arthelokyo/astrowind', target: '_blank' }],
+  actions: [{ text: 'Заказать звонок', href: '#contact', variant: 'primary' }],
 };
 
 export const footerData = {
   links: [
     {
-      title: 'Product',
+      title: 'Навигация',
       links: [
-        { text: 'Features', href: '#' },
-        { text: 'Security', href: '#' },
-        { text: 'Team', href: '#' },
-        { text: 'Enterprise', href: '#' },
-        { text: 'Customer stories', href: '#' },
-        { text: 'Pricing', href: '#' },
-        { text: 'Resources', href: '#' },
+        { text: 'Главная', href: '/' },
+        { text: 'Услуги', href: '/services' },
+        { text: 'О нас', href: '/about' },
+        { text: 'Контакты', href: '/contact' },
+        { text: 'FAQ', href: '/faq' },
       ],
     },
     {
-      title: 'Platform',
+      title: 'Услуги',
       links: [
-        { text: 'Developer API', href: '#' },
-        { text: 'Partners', href: '#' },
-        { text: 'Atom', href: '#' },
-        { text: 'Electron', href: '#' },
-        { text: 'AstroWind Desktop', href: '#' },
+        { text: 'Дезинсекция', href: '/services#disinsection' },
+        { text: 'Дератизация', href: '/services#deratization' },
+        { text: 'Дезинфекция', href: '/services#disinfection' },
+        { text: 'Консультация', href: '/services#consultation' },
+        { text: 'Профилактика', href: '/services#prevention' },
       ],
     },
     {
-      title: 'Support',
+      title: 'Контакты',
       links: [
-        { text: 'Docs', href: '#' },
-        { text: 'Community Forum', href: '#' },
-        { text: 'Professional Services', href: '#' },
-        { text: 'Skills', href: '#' },
-        { text: 'Status', href: '#' },
-      ],
-    },
-    {
-      title: 'Company',
-      links: [
-        { text: 'About', href: '#' },
-        { text: 'Blog', href: '#' },
-        { text: 'Careers', href: '#' },
-        { text: 'Press', href: '#' },
-        { text: 'Inclusion', href: '#' },
-        { text: 'Social Impact', href: '#' },
-        { text: 'Shop', href: '#' },
+        { text: 'Телефон: +7 (863) 123-45-67', href: 'tel:+78631234567' },
+        { text: 'Email: info@rostov-dez.ru', href: 'mailto:info@rostov-dez.ru' },
+        { text: 'Ростов-на-Дону', href: '/contact#map' },
       ],
     },
   ],
   secondaryLinks: [
-    { text: 'Terms', href: getPermalink('/terms') },
-    { text: 'Privacy Policy', href: getPermalink('/privacy') },
+    { text: 'Политика конфиденциальности', href: '/privacy' },
   ],
   socialLinks: [
-    { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
-    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
-    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
-    { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
-    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/arthelokyo/astrowind' },
+    { ariaLabel: 'WhatsApp', icon: 'tabler:brand-whatsapp', href: '#' },
+    { ariaLabel: 'Telegram', icon: 'tabler:brand-telegram', href: '#' },
+    { ariaLabel: 'Viber', icon: 'tabler:brand-viber', href: '#' },
   ],
   footNote: `
-    Made by <a class="text-blue-600 underline dark:text-muted" href="https://github.com/arthelokyo"> Arthelokyo</a> · All rights reserved.
+    \u0420\u043e\u0441\u0442\u043e\u0432 \u0414\u0435\u0437\u2014\u0441\u0430\u043d\u0438\u0442\u0430\u0440\u043d\u0430\u044f \u0437\u0430\u0449\u0438\u0442\u0430 800+ \u043f\u0440\u0435\u0434\u043f\u0440\u0438\u044f\u0442\u0438\u0439 \u0420\u043e\u0441\u0442\u043e\u0432\u0430-\u043d\u0430-\u0414\u043e\u043d\u0443. \u0420\u0430\u0431\u043e\u0442\u0430\u0435\u043c \u043d\u043e\u0447\u044c\u044e, \u0447\u0442\u043e\u0431\u044b \u0432\u0430\u0448 \u0431\u0438\u0437\u043d\u0435\u0441 \u0431\u044b\u043b \u0447\u0438\u0441\u0442\u044b\u043c \u0434\u043d\u0451\u043c.
   `,
 };

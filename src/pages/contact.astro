@@ -5,75 +5,115 @@ import ContactUs from '~/components/widgets/Contact.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 
 const metadata = {
-  title: 'Contact',
+  title: 'Контакты - Ростов Дез',
 };
 ---
 
 <Layout metadata={metadata}>
   <!-- HeroText Widget ******************* -->
 
-  <HeroText tagline="Contact" title="Let's Connect!" />
+  <HeroText tagline="Контакты" title="Вредители размножаются каждый час. Не дайте проблеме вырасти в катастрофу." />
 
   <ContactUs
     id="form"
-    title="Drop us a message today!"
-    subtitle="For quicker answers, explore our FAQs section. You may find the solution you're looking  for right there! If not, our support team is delighted to help you."
+    title="Оставьте заявку"
+    subtitle="Свяжитесь с нами сейчас. Это конфиденциально. Ваши конкуренты и клиенты ничего не узнают. Мы проведем аудит, найдем причину и назовем точную цену решения «под ключ»."
     inputs={[
       {
         type: 'text',
         name: 'name',
-        label: 'Name',
+        label: 'Ваше имя',
+        placeholder: 'Иван Петров',
+      },
+      {
+        type: 'tel',
+        name: 'phone',
+        label: 'Ваш телефон',
+        placeholder: '+7 (___) ___-__-__',
+      },
+      {
+        type: 'text',
+        name: 'object_type',
+        label: 'Тип объекта',
+        placeholder: 'Кафе/ресторан, магазин, склад, офис...',
       },
       {
         type: 'email',
         name: 'email',
-        label: 'Email',
+        label: 'Ваш email',
+        placeholder: 'example@mail.ru',
+      },
+      {
+        type: 'text',
+        name: 'city',
+        label: 'Город',
+        placeholder: 'Ростов-на-Дону',
       },
     ]}
-    textarea={{
-      label: 'Message',
-    }}
     disclaimer={{
-      label:
-        'By submitting this contact form, you acknowledge and agree to the collection of your personal information.',
+      label: 'Я соглашаюсь на обработку персональных данных в соответствии с политикой конфиденциальности',
     }}
-    description="Our support team typically responds within 24 business hours."
+    button="Получить план уничтожения вредителей"
+    description="Заметили вредителя сегодня? Звоните прямо сейчас. Бригада дежурного выезда готова стартовать через 15 минут."
   />
 
-  <!-- Features2 Widget ************** -->
+  <!-- Features2 Widget (Contact Info) ************** -->
 
   <Features2
-    title="We are here to help!"
+    title="Наши контакты"
+    tagline="Как с нами связаться"
+    columns={3}
     items={[
       {
-        title: 'General support',
-        description: `Chat with us for inquiries related to account management, website navigation, payment issues, accessing purchased templates or general questions about the website's functionality.`,
-      },
-      {
-        title: 'Contact sales',
-        description:
-          'Chat with us for questions about purchases, customization options, licensing for commercial use, inquiries about specific template, etc.',
-      },
-      {
-        title: 'Technical support',
-        description:
-          'Chat with us when facing issues like template installation, problems editing difficulties, compatibility issues with software or download errors, or other technical challenges related to using the templates.',
-      },
-      {
-        title: 'Phone',
-        description: '+1 (234) 567-890',
-        icon: 'tabler:headset',
+        title: 'Телефон',
+        description: '+7 (863) 123-45-67',
+        icon: 'tabler:phone',
       },
       {
         title: 'Email',
-        description: 'contact@support.com',
+        description: 'info@rostov-dez.ru',
         icon: 'tabler:mail',
       },
       {
-        title: 'Location',
-        description: '1234 Lorem Ipsum St, 12345, Miami, EEUU',
+        title: 'Адрес',
+        description: 'г. Ростов-на-Дону, ул. Большая Садовая, 123',
         icon: 'tabler:map-pin',
+      },
+      {
+        title: 'Время работы',
+        description: 'Пн-Пт: 09:00-18:00\nСб-Вс: По договорённости',
+        icon: 'tabler:clock',
+      },
+      {
+        title: 'Экстренный выезд',
+        description: 'Круглосуточно, 7 дней в неделю',
+        icon: 'tabler:24-hours',
+      },
+      {
+        title: 'Мессенджеры',
+        description: 'WhatsApp, Telegram, Viber',
+        icon: 'tabler:message-circle',
       },
     ]}
   />
+
+  <!-- Map Section ******************* -->
+
+  <section class="px-4 py-16 sm:px-6 mx-auto lg:px-8 lg:py-20 max-w-7xl">
+    <div class="mb-10 md:mb-12 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold leading-tighter tracking-tighter mb-4 font-heading">Мы на карте</h2>
+      <p class="text-xl text-muted dark:text-slate-400">Наш офис находится в центре Ростова-на-Дону</p>
+    </div>
+    <div class="w-full h-96 rounded-lg overflow-hidden shadow-lg">
+      <!-- Yandex Maps Embedded Map for Rostov-on-Don -->
+      <iframe
+        src="https://yandex.ru/map-widget/v1/?ll=39.701505%2C47.222078&z=12&l=map"
+        width="100%"
+        height="100%"
+        frameborder="0"
+        allowfullscreen
+        style="position:relative;"
+        title="Карта Ростова-на-Дону"></iframe>
+    </div>
+  </section>
 </Layout>
