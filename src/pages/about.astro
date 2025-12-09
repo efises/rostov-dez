@@ -14,14 +14,18 @@ const metadata = {
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
 
-  <Hero title="Мы - санитарный спецназ Ростова-на-Дону. Работаем с 2009 года там, где другие сдаются.">
+  <Hero>
+    <Fragment slot="title">
+      Мы - <span class="text-primary dark:text-primary">санитарный спецназ</span> Ростова-на-Дону. Работаем с 2009 года там,
+      где другие сдаются.
+    </Fragment>
     <Fragment slot="subtitle">
-      <p class="text-xl text-muted dark:text-slate-400 max-w-4xl mx-auto">
+      <p class="text-xl text-muted dark:text-slate-400 max-w-5xl mx-auto">
         Есть два типа подхода к санитарии. Первый - «побрызгать для галочки». Это дешево, пахнет хлоркой и не решает
         проблему, а лишь загоняет её вглубь. Второй - системная биологическая защита. Это то, чем занимаемся мы в
         «Ростов Дез».
       </p>
-      <p class="text-xl text-muted dark:text-slate-400 max-w-4xl mx-auto mt-6">
+      <p class="text-xl text-muted dark:text-slate-400 max-w-3xl mx-auto mt-6">
         Мы понимаем: вы бизнесмен, а не биолог. Вы не обязаны знать циклы размножения прусаков или резистентность крыс к
         ядам. Это наша работа.
       </p>
